@@ -15,12 +15,9 @@ browser.get(f"https://web.whatsapp.com/send/?phone={num}&text&type=phone_number&
 input("enter to run the code: ")
 
 msg_box = browser.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[1]/div[2]/div[1]/p')
-sleep(0.1)
 msg_box.send_keys("hello")
-sleep(0.1)
+sleep(0.05)
 btn = browser.find_element(By.XPATH, '//*[@id="main"]/footer/div[1]/div/span/div/div[2]/div[2]/button')
-sleep(0.1)
 btn.click()
-sleep(0.1)
 
 input("enter to quit: ")
